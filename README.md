@@ -10,7 +10,7 @@ $ pkg update -y && pkg upgrade -y
 $ pkg install git -y
 $ pkg install python -y
 $ pip install requests
-$ git clone https://github.com/DARK-02/Multi-Otp
+$ git clone https://github.com/DarkDream98/Spam.git
 ```
 ## Eksekusi
 ```python3
