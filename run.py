@@ -48,7 +48,7 @@ def alok_mengpro():
                   print ('   \033[1;37m[\033[31m#\033[1;37m] \033[1;37mTidak dapat terkirim di karenakan inquiryId sedang di gunakan!, Mohon Coba Lagi! \033[31m ')
              else:
                   print ('   \033[1;37m[\033[1;32m#\033[1;37m] \033[1;32mTerkirim \033[31m ')
-             countdownTimer(00, 60)
+             countdownTimer(00, 10)
     elif alok == "2":
          print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37mRUNNING \033[1;33m• \033[0m\033[1;30m]══════════════>")
          xl_0 = input("   \033[1;37m[\033[1;35m#\033[1;37m] No Target: \033[36m0")
@@ -112,10 +112,10 @@ def alok_mengpro():
              b = json.loads(a)["code"]
              if b == 0:
                   print('   \033[1;37m[\033[1;32m#\033[1;37m] \033[1;32mTerkirim \033[31m ')
-                  countdownTimer(00, 60)
+                  countdownTimer(00, 10)
              else:
                   print ('   \033[1;37m[\033[31m#\033[1;37m] \033[1;37mGagal! \033[31m ')
-                  countdownTimer(00, 60)
+                  countdownTimer(00, 10)
     elif alok == "4":
          os.system("xdg-open https://chat.whatsapp.com/GfDPRMb91AD8UXpD2jbJVD")
          print (":)")
@@ -144,9 +144,9 @@ def banner_anjay_alok():
     print ("")
     alok_mengpro()
 def countdownTimer(start_minute, start_second):
-    total_second = start_minute * 60 + start_second
+    total_second = start_minute * 10 + start_second
     while total_second:
-        mins, secs = divmod(total_second, 60)
+        mins, secs = divmod(total_second, 10)
         print(f'   \033[1;37m[\033[1;35m#\033[1;37m] waiting (\033[1;32m{secs:02d}\033[1;37m)', end='\r')
         time.sleep(1)
         total_second -= 1
